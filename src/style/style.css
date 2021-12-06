@@ -199,6 +199,77 @@ main .hero {
     margin-top: 14px;
 }
 
+
+
+/*------------------------------- Gift Style ---------------------------------*/
+.gift {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.gift__wrapper {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    border: solid 2px #f29301;
+    font-weight: 400;
+    line-height: 1;
+    color: #000000;
+    cursor: pointer;
+    padding: 26px 30px 20px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.gift__wrapper .title {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f29301;
+    text-align: center;
+}
+
+.gift__wrapper .title .inner {
+    display: inline-block;
+    padding: 0 10px;
+    background: #FFFFFF;
+}
+
+.gift__wrapper .txt {
+    font-size: 22px;
+    line-height: 1.3;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.gift__wrapper .btn {
+    display: inline-block;
+    padding: 8px 20px;
+    border: solid 2px #f29400;
+    background: #f29400;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.gift__wrapper .btn:hover {
+    background: #FFFFFF;
+    color: #F29301
+}
+
+/*-------------------------------Slide Style ---------------------------------*/
+
+
 /*------------------------------- Overlay Style ---------------------------------*/
 
 .overlay {
