@@ -268,7 +268,54 @@ main .hero {
 }
 
 /*-------------------------------Slide Style ---------------------------------*/
+.slide {
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
 
+.slide .container {
+    width: 49%;
+    text-align: justify;
+}
+
+.slide .container h3 {
+    margin-bottom: 20px;
+}
+
+.slide .container .title .btn__section .btn {
+    padding: 8px 20px;
+    border: solid 2px #f29400;
+    margin-top: 20px;
+    background: #f29400;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.slide .container .title .btn__section .btn:hover {
+    background: #FFFFFF;
+    color: #F29301
+}
+
+.slide .img {
+    background-image: url("../../asset/slide.jpg");
+    height: 300px;
+    width: 49%;
+    background-size: cover;
+    background-position: center;
+
+}
 
 /*------------------------------- Overlay Style ---------------------------------*/
 
