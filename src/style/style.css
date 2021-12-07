@@ -285,7 +285,7 @@ main .hero {
     text-align: justify;
 }
 
-.slide .container h3 {
+.slide .container h2 {
     margin-bottom: 20px;
 }
 
@@ -315,6 +315,47 @@ main .hero {
     background-size: cover;
     background-position: center;
 
+}
+
+/*------------------------------- Paralax Style ---------------------------------*/
+
+.parallax {
+    height: 70vh;
+    margin: 50px 0;
+    background-image: url("../../asset/parallax.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*------------------------------- Video Style ---------------------------------*/
+.video {
+    height: 400px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.video .videoYtb {
+    height: 300px;
+    width: 49%;
+
+}
+
+.video .container {
+    width: 49%;
+    text-align: justify;
+}
+
+.video .container h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 100;
 }
 
 /*------------------------------- Overlay Style ---------------------------------*/
