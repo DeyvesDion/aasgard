@@ -42,6 +42,20 @@ header ul {
     display: flex;
 }
 
+header.sticky {
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 20px #f3dab4;
+}
+
+header.sticky .logo {
+    color: #000000;
+}
+
+header.sticky ul li a {
+    color: #000000;
+}
+
+
 
 /* loGoMobile Style */
 header ul li .logoMobile,
@@ -84,6 +98,14 @@ header ul li .rdv:hover {
     border: 2px solid #F29301;
     color: #F29301;
     background: #FFFFFF;
+}
+
+header.sticky ul li .rdv {
+    color: #FFFFFF
+}
+
+header.sticky ul li .rdv:hover {
+    color: #000000;
 }
 
 
