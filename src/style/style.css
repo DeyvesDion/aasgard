@@ -380,6 +380,7 @@ main .hero {
     font-weight: 100;
 }
 
+/*------------------------------- Carousel Style ---------------------------------*/
 
 .carousel {
     width: 100%;
@@ -431,7 +432,6 @@ main .hero {
 }
 
 .carousel .container div {
-    background-color: red;
     min-height: 200px;
     padding: 10px;
     cursor: pointer;
@@ -461,6 +461,32 @@ main .hero {
 .carousel .btn__section .btn:hover {
     background: #FFFFFF;
     color: #F29301
+}
+
+/*------------------------------- Question Style ---------------------------------*/
+.question {
+    height: 300px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.question .txt {
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 48px;
+    text-align: center;
+}
+
+.question .separator {
+    width: 70px;
+    height: 3px;
+    background-color: #F29301;
+    margin: 0 auto;
+    margin-top: 30px
 }
 
 /*------------------------------- Overlay Style ---------------------------------*/
