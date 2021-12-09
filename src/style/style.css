@@ -489,6 +489,74 @@ main .hero {
     margin-top: 30px
 }
 
+/*------------------------------- Footer Style ---------------------------------*/
+
+footer {
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    background-image: url("../../asset/Picto-Elan.svg");
+    background-size: 39%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+footer .container .wrapper h2 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+footer .container .wrapper .separator {
+    width: 70px;
+    height: 3px;
+    background-color: #F29301;
+    margin-top: 20px
+}
+
+footer .container .wrapper .item__wrapper {
+    padding-top: 30px
+}
+
+footer .container .wrapper .item__wrapper li {
+    margin: 10px 0;
+}
+
+footer .container .wrapper .item__wrapper a {
+    color: #FFFFFF;
+}
+
+footer .social {
+    height: 200px;
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+footer .social .logo {
+    background-image: url("../../asset/footer-logo.png");
+    height: 30px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer .social .icon {
+    color: #FFFFFF
+}
+
 /*------------------------------- Overlay Style ---------------------------------*/
 
 .overlay {
