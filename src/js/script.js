@@ -2,6 +2,7 @@
 const getOverlay = document.querySelector(".overlay");
 const closeDesktop = document.querySelector(".closeBtnDesktop");
 const closeMobile = document.querySelector(".closeBtnMobile");
+
 // fonction menu sticky
 window.addEventListener("scroll", () => {
     const header = document.querySelector("header");
