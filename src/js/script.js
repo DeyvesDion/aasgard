@@ -19,3 +19,4 @@ function toggleMenu() {
 window.addEventListener("load", () => { setTimeout(() => { getOverlay.classList.add("show"); }, 2000) });
 closeDesktop.addEventListener("click", () => { getOverlay.classList.remove("show"); });
 closeMobile.addEventListener("click", () => { getOverlay.classList.remove("show"); })
+// deteronome 8 18
