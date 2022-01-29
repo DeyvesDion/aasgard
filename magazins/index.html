@@ -4,9 +4,30 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Aäsgard | Magazins</title>
+        <link rel="stylesheet" href="../src/style/style.css" />
+        <link
+            rel="shortcut icon"
+            href="../asset/favicon-aasgard.png"
+            type="image/x-icon"
+        />
+
+        <!-- Invection de la barre de navigation -->
+        <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            $(function () {
+                $("#header").load("../menu/index.html");
+            });
+        </script>
+        <title>Aäsgard | Nos Produits</title>
     </head>
     <body>
+        <!---------------------- Header --------------------->
+        <div id="header"></div>
         <h1>Page Magazins</h1>
+        <script src="../src/js/script.js"></script>
     </body>
 </html>
