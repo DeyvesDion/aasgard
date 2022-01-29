@@ -10,11 +10,20 @@
             href="./asset/favicon-aasgard.png"
             type="image/x-icon"
         />
+         <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+                integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+                crossorigin="anonymous">
+        </script>
+        <script>
+        $(function(){
+            $('#header').load("./asset/menu/index.html")
+        })
+        </script>
         <title>Test d'intégration de la maquette du site de Aäsgard</title>
     </head>
     <body>
         <!------------------------------------------ Header ----------------------------------------->
-        <header>
+        <!-- <header>
             <div class="logoSection">
                 <a href="#" class="logo">AÄSGARD</a>
             </div>
@@ -45,7 +54,9 @@
                     /></a>
                 </li>
             </ul>
-        </header>
+        </header> -->
+        <div id="header"></div>
+       
         <main>
             <!------------------------------------------ Hero ----------------------------------------->
             <div class="hero">
