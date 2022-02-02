@@ -16,7 +16,7 @@
             crossorigin="anonymous">
         </script>
         <script>
-        $(function(){
+            $(document).ready(() => {
             $('#header').load("./menu/index.html");
         });
         </script>
@@ -59,13 +59,7 @@
         <div id="header"></div>
        
         <main>
-            <!------------------------------------------ Hero ----------------------------------------->
-            <div class="hero">
-                <div class="presentation">
-                    <h1 class="title">LE POÊLE VENU <br>
-                        DU GRAND NORD</h1>
-                </div>
-                <!------------------------------------------ Overlay ----------------------------------------->
+            <!------------------------------------------ Overlay ----------------------------------------->
                 <div class="overlay">
                     <div class="popupBox">
                         <div class="popupMrg"></div>
@@ -94,17 +88,27 @@
                             </div>
                         </div>
                     </div>
+                </div> 
+            <!------------------------------------------ Hero ----------------------------------------->
+            <div class="hero">
+                <div class="presentation">
+                    <h1 class="title">LA VIE AU COIN DU FEU<span class="titleExpose">.</span></h1>
                 </div>
+                
             </div>
             <!------------------------------------------ Experience ----------------------------------------->
             <div class="experience">
-                <h2 class="title">Vivez l’expérience <br>
-                        scandinave Aäsgard</h2>
+                <div class="experience-container">
+                    <h2 class="title">Vivez l’expérience<br/>
+                        scandinave Aäsgard<span class="titleExpose">.</span></h2>
+                <div class="float-img"></div>
                 <p class="description">Enveloppé par une chaleur douce et diffuse, vous admirez la vue des flammes du feu de bois.
                    Vous maintenez, sans effort, une température agréable et constante, en maîtrisant votre consommation.
                    La pose de votre poêle à bois est réalisée par nos experts certifiés en techniques de fumisterie.
                    Maintenant, votre poêle scandinave sublime votre intérieur.<br>
                    Détendez-vous, Aäsgard s’occupe de vous.</p>
+                </div>
+                
             </div>
             <!------------------------------------------ Discovery ----------------------------------------->
             <div class="discovery">

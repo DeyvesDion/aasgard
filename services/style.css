@@ -1,0 +1,246 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+/* Reset Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', "sans-serif";
+}
+
+/******************** NavBar Style *********************/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 77px;
+    align-items: center;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-around;
+    background: #000000;
+    transition: 1.5s;
+    z-index: 1000;
+}
+
+header .logo {
+    color: #FFFFFF;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header.sticky {
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 20px #f3dab4;
+}
+
+header.sticky .logo {
+    color: #000000;
+}
+
+header.sticky ul li a {
+    color: #000000;
+}
+
+
+
+/*************************** loGoMobile Style ***********************/
+header ul li .logoMobile,
+.logoMobileImg {
+    display: none;
+}
+
+header ul li a {
+    color: #FFFFFF;
+    font-size: 15px;
+    height: 50px;
+    position: relative;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 20px;
+    display: block;
+}
+
+header ul li a:hover {
+    background-color: #F29301;
+}
+
+header ul .rdvBlock {
+    width: 160px;
+}
+
+header ul li .rdv {
+    color: #F29301;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 3px;
+    border: 2px solid #F29301;
+    background: #000000;
+    opacity: 1;
+}
+
+header ul li .rdv:hover {
+    border: 2px solid #F29301;
+    color: #F29301;
+    background: #FFFFFF;
+}
+
+header.sticky ul li .rdv {
+    color: #FFFFFF
+}
+
+header.sticky ul li .rdv:hover {
+    color: #000000;
+}
+
+/*---------------------------------- Hero Style ------------------------------ */
+
+main .hero {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-image: url('../asset/service_banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .presentation .title {
+    font-size: 80px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.expose {
+    color: #fe9c02;
+    font-size: 130px;
+}
+
+/*------------------------------- Service client Style ---------------------------------*/
+.service-client {
+    width: 100%;
+}
+
+.service-client .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service-client .container .title {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 30px 0px;
+}
+
+/***************** Accompagnement *****************/
+
+.accompagnement,
+.financement,
+.contrat,
+.maison {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.accompagnement .container,
+.financement .container,
+.contrat .container,
+.maison .container {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.financement .container,
+.contrat .container,
+.maison .container {
+    margin-top: 40px;
+}
+
+.accompagnement .container .img {
+    height: 571px;
+    width: 43%;
+    background-image: url('../asset/Service_Client.jpg');
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.accompagnement .container .description,
+.financement .container .description,
+.contrat .description,
+.maison .description {
+    width: 47%;
+}
+
+/************************* financement *********************/
+
+.financement .title,
+.contrat .title,
+.maison .title {
+    font-size: 80px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.financement .container .img {
+    height: 571px;
+    width: 43%;
+    background-image: url('../asset/Financement.jpg');
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+/*********************** Contrat ***********************/
+
+.contrat .container .img {
+    height: 571px;
+    width: 43%;
+    background-image: url('../asset/Financement.jpg');
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.contrat .description h2,
+.maison .description h2 {
+    padding: 20px 0
+}
+
+/*********************** Maison neuve ***********************/
+.maison {
+    margin-bottom: 150px;
+}
+
+.maison .container .img {
+    height: 571px;
+    width: 43%;
+    background-image: url('../asset/Accompagnement.jpg');
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
