@@ -185,7 +185,6 @@ main .hero {
     background-image: url('../asset/Service_Client.jpg');
     background-position: center;
     background-size: cover;
-    /* background-attachment: fixed; */
 }
 
 .accompagnement .container .description,
@@ -212,7 +211,6 @@ main .hero {
     background-image: url('../asset/Financement.jpg');
     background-position: center;
     background-size: cover;
-    /* background-attachment: fixed; */
 }
 
 /*********************** Contrat ***********************/
@@ -220,10 +218,9 @@ main .hero {
 .contrat .container .img {
     height: 571px;
     width: 43%;
-    background-image: url('../asset/Financement.jpg');
+    background-image: url('../asset/Contrat_services.jpg');
     background-position: center;
     background-size: cover;
-    /* background-attachment: fixed; */
 }
 
 .contrat .description h2,
@@ -242,5 +239,4 @@ main .hero {
     background-image: url('../asset/Accompagnement.jpg');
     background-position: center;
     background-size: cover;
-    /* background-attachment: fixed; */
 }
