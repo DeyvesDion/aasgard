@@ -66,33 +66,67 @@ main .produit .presentation {
 }
 
 /* poele */
-.poele .container .row .poele {
-    width: 47%;
-    height: 500px;
+main .poele {
+    padding-bottom: 60px;
 }
 
 .poele .container .row {
     width: 80%;
-    cursor: pointer;
     margin: 0 auto;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     justify-content: space-around;
 }
 
-.poele .container .row .poele1 {
-    text-align: center;
-    background-image: url('../asset/596vignette.png');
-    background-position: center;
-    background-size: cover;
-
+.poele .container .row .poele {
+    width: 47%;
+    height: 500px;
+    cursor: pointer;
 }
 
-.poele .container .row .poele2 {
-    text-align: center;
-    background-image: url('../asset/Rika Domo vignette.png');
-    background-position: center;
-    background-size: cover;
+.poele .container .row .poele img {
+    width: 100%;
+    height: 100%;
+}
 
+.poele .container .row .poele4,
+.poele .container .row .poele5 {
+    width: 35%;
+    height: 100%;
+}
+
+.poele .container .row .poel {
+    width: 20%;
+    height: 408px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.poele .container .row .poele::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: #F29301 0% 0% no-repeat padding-box;
+    width: 237px;
+    height: 4px;
+}
+
+.poele .container .row .txt {
+    width: 47%;
+    height: 474px;
+    border: solid 2px #F29301;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.poele .container .row .poele5 {
+    /* margin-top: 10px; */
 }
