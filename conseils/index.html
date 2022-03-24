@@ -4,14 +4,20 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../src/style/style.css" />
+
+        <!-- index style -->
+        <link rel="stylesheet" href="./style.css" />
+        <!-- Menu style -->
+        <link rel="stylesheet" href="../menu/menu.css" />
+        <!-- Footer Style -->
+        <link rel="stylesheet" href="../footer/footer.css" />
         <link
             rel="shortcut icon"
             href="../asset/favicon-aasgard.png"
             type="image/x-icon"
         />
 
-        <!-- Invection de la barre de navigation -->
+        <!-- InJection de la barre de navigation -->
         <script
             src="https://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -22,13 +28,21 @@
                 $("#header").load("../menu/index.html");
             });
         </script>
-        <title>Aäsgard | Nos Produits</title>
+        <title>Aäsgard | Nos Conseils</title>
     </head>
     <body>
         <!---------------------- Header --------------------->
         <div id="header"></div>
-        <h1>Page Conseil</h1>
-        <script src="../src/js/script.js"></script>
+        <h1>Page Produit</h1>
+        <main></main>
+        <!-- Injection du footer -->
+        <script>
+            $(document).ready(() => {
+                $("#footer").load("../footer/index.html");
+            });
+        </script>
+        <!-- footer -->
+        <div id="footer"></div>
+        <script src="./src/js/script.js"></script>
     </body>
-    <main></main>
 </html>

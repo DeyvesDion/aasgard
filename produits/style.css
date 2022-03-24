@@ -1,0 +1,98 @@
+/* Hero style */
+main .hero {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-image: url('../asset/Produits_Cover_Feu.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero .presentation .title {
+    font-size: 80px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.expose {
+    color: #fe9c02;
+    font-size: 130px;
+}
+
+.hero .presentation .subTitle {
+    font-size: 23px;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.hero .presentation .description {
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+/* Product style */
+
+main .produit {
+    width: 100%;
+    padding: 60px 0;
+}
+
+main .produit .presentation {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.produit .presentation .title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px
+}
+
+.produit .presentation .title:hover {
+    text-decoration: underline;
+}
+
+/* poele */
+.poele .container .row .poele {
+    width: 47%;
+    height: 500px;
+}
+
+.poele .container .row {
+    width: 80%;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.poele .container .row .poele1 {
+    text-align: center;
+    background-image: url('../asset/596vignette.png');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.poele .container .row .poele2 {
+    text-align: center;
+    background-image: url('../asset/Rika Domo vignette.png');
+    background-position: center;
+    background-size: cover;
+
+}

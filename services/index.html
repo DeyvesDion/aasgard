@@ -4,7 +4,13 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- index style -->
         <link rel="stylesheet" href="./style.css" />
+        <!-- Menu style -->
+        <link rel="stylesheet" href="../menu/menu.css" />
+        <!-- Footer Style -->
+        <link rel="stylesheet" href="../footer/footer.css" />
         <link
             rel="shortcut icon"
             href="../asset/favicon-aasgard.png"
@@ -27,8 +33,6 @@
     <body>
         <!---------------------- Header --------------------->
         <div id="header"></div>
-        <h1>Page Magazins</h1>
-        <script src="../src/js/script.js"></script>
         <main>
             <div class="hero">
                 <div class="presentation">
@@ -154,5 +158,15 @@
                 </div>
             </div>
         </main>
+        <!-- Injection du footer -->
+        <script>
+            $(document).ready(() => {
+                $("#footer").load("../footer/index.html");
+            });
+        </script>
+        <!-- footer -->
+        <div id="footer"></div>
+
+        <script src="../src/js/script.js"></script>
     </body>
 </html>

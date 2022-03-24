@@ -4,23 +4,30 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- index style -->
         <link rel="stylesheet" href="./src/style/style.css" />
+        <!-- Menu style -->
+        <link rel="stylesheet" href="./menu/menu.css" />
+        <!-- Footer Style -->
+        <link rel="stylesheet" href="./footer/footer.css" />
         <link
             rel="shortcut icon"
             href="./asset/favicon-aasgard.png"
             type="image/x-icon"
         />
         <!-- Injection de la barre de navigation -->
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js" 
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" 
-            crossorigin="anonymous">
-        </script>
+
+        <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"
+        ></script>
         <script>
             $(document).ready(() => {
-            $('#header').load("./menu/index.html");
-        });
+                $("#header").load("./menu/index.html");
+            });
         </script>
-        <title>Test d'intégration de la maquette du site de Aäsgard</title>
+        <title>Intégration de la maquette du site de Aäsgard</title>
     </head>
     <body>
         <!------------------------------------------ Header ----------------------------------------->
@@ -57,202 +64,186 @@
             </ul>
         </header> -->
         <div id="header"></div>
-       
+
         <main>
             <!------------------------------------------ Overlay ----------------------------------------->
-                <div class="overlay">
-                    <div class="popupBox">
-                        <div class="popupMrg"></div>
-                        <div class="popupImg"></div>
-                        <div class="popupImgMobile">
+            <div class="overlay">
+                <div class="popupBox">
+                    <div class="popupMrg"></div>
+                    <div class="popupImg"></div>
+                    <div class="popupImgMobile">
+                        <h1 class="title">Vous hésitez ?</h1>
+                        <hr class="separator" />
+                        <div class="closeBtnMobile"></div>
+                    </div>
+                    <div class="popupTxt">
+                        <div class="closeBtnDesktop"></div>
+                        <div class="txtBox">
                             <h1 class="title">Vous hésitez ?</h1>
                             <hr class="separator" />
-                            <div class="closeBtnMobile"></div>
-                        </div>
-                        <div class="popupTxt">
-                            <div class="closeBtnDesktop"></div>
-                            <div class="txtBox">
-                                <h1 class="title">Vous hésitez ?</h1>
-                                <hr class="separator" />
-                                <h2 class="subTitle">
-                                    Prenez rendez-vous<br>
-                                    en magasin !
-                                </h2>
-                                <p class="paragraph">
-                                    Nos conseillers vous guideront<br>
-                                    dans votre projet
-                                </p>
-                                <button class="btnRdv" type="submit">
-                                    je prends rdv
-                                </button>
-                            </div>
+                            <h2 class="subTitle">
+                                Prenez rendez-vous<br />
+                                en magasin !
+                            </h2>
+                            <p class="paragraph">
+                                Nos conseillers vous guideront<br />
+                                dans votre projet
+                            </p>
+                            <button class="btnRdv" type="submit">
+                                <a href="/rdv">je prends rdv</a>
+                            </button>
                         </div>
                     </div>
-                </div> 
+                </div>
+            </div>
             <!------------------------------------------ Hero ----------------------------------------->
             <div class="hero">
                 <div class="presentation">
-                    <h1 class="title">LA VIE AU COIN DU FEU<span class="titleExpose">.</span></h1>
+                    <h1 class="title">
+                        LA VIE AU COIN DU FEU<span class="titleExpose">.</span>
+                    </h1>
                 </div>
-                
             </div>
             <!------------------------------------------ Experience ----------------------------------------->
             <div class="experience">
                 <div class="experience-container">
-                    <h2 class="title">Vivez l’expérience<br/>
-                        scandinave Aäsgard<span class="titleExpose">.</span></h2>
-                <div class="float-img"></div>
-                <p class="description">Enveloppé par une chaleur douce et diffuse, vous admirez la vue des flammes du feu de bois.
-                   Vous maintenez, sans effort, une température agréable et constante, en maîtrisant votre consommation.
-                   La pose de votre poêle à bois est réalisée par nos experts certifiés en techniques de fumisterie.
-                   Maintenant, votre poêle scandinave sublime votre intérieur.<br>
-                   Détendez-vous, Aäsgard s’occupe de vous.</p>
+                    <h2 class="title">
+                        Vivez l’expérience<br />
+                        scandinave Aäsgard<span class="titleExpose">.</span>
+                    </h2>
+                    <div class="float-img"></div>
+                    <p class="description">
+                        Enveloppé par une chaleur douce et diffuse, vous admirez
+                        la vue des flammes du feu de bois. Vous maintenez, sans
+                        effort, une température agréable et constante, en
+                        maîtrisant votre consommation. La pose de votre poêle à
+                        bois est réalisée par nos experts certifiés en
+                        techniques de fumisterie. Maintenant, votre poêle
+                        scandinave sublime votre intérieur.<br />
+                        Détendez-vous, Aäsgard s’occupe de vous.
+                    </p>
                 </div>
-                
             </div>
             <!------------------------------------------ Discovery ----------------------------------------->
             <div class="discovery">
                 <div class="img">
-                    <img src="./asset/logo-discovery.png" alt="logo-discovery">
+                    <img
+                        src="./asset/logo-discovery.png"
+                        alt="logo-discovery"
+                    />
                 </div>
                 <div class="content">
                     <div class="h1">Quel poêle</div>
                     <div class="h2">Est fäit pour vØus&nbsp;?</div>
                     <div class="txt">Découvrez votre feu idéal</div>
                 </div>
-
             </div>
             <!------------------------------------------ Gift ----------------------------------------->
             <div class="gift">
                 <div class="gift__wrapper">
                     <div class="title">
                         <div class="inner">
-                           Faites un cadeau de Noël à vos amis 
+                            Faites un cadeau de Noël à vos amis
                         </div>
                     </div>
-                    <div class="txt">
-                        Achetez-vous un poêle Aäsgard !
-                    </div>
+                    <div class="txt">Achetez-vous un poêle Aäsgard !</div>
                     <button class="btn" type="button">Je prends RDV</button>
                 </div>
             </div>
             <!------------------------------------------ Slide ----------------------------------------->
             <div class="slide">
-                    <div class="container">
-                        <div class="title">
-                            <h2>Trouvez votre poêle à bois idéal</h2>
-                            <div class="txt">
-                                <p>
-                                    Formés régulièrement aux dernières normes de fumisterie, nos techniciens salariés connaissent 
-                                    parfaitement leur métier et sont certifiés RGE Qualibois, 
-                                    la norme qualité des installateurs de poêles à bois et cheminées. 
-                                    Tous nos collaborateurs s’impliquent pour construire avec vous une relation de confiance. 
-                                    Nous respectons et appliquons les méthodes de travail pour une pose, un raccordement 
-                                    et un montage dans les règles de l’art : sécuriser, protéger votre logement et vous 
-                                    former à l’utilisation de l’appareil. Votre poêle n’a plus de secret pour vous. 
-                                    À vous l’ambiance chaleureuse d’un foyer chauffé au bois.
-                                </p>
-                            </div>
-                            <div class="btn__section">
-                                <button class="btn" type="button">Je prends RDV</button>
-                            </div>
+                <div class="container">
+                    <div class="title">
+                        <h2>Trouvez votre poêle à bois idéal</h2>
+                        <div class="txt">
+                            <p>
+                                Formés régulièrement aux dernières normes de
+                                fumisterie, nos techniciens salariés connaissent
+                                parfaitement leur métier et sont certifiés RGE
+                                Qualibois, la norme qualité des installateurs de
+                                poêles à bois et cheminées. Tous nos
+                                collaborateurs s’impliquent pour construire avec
+                                vous une relation de confiance. Nous respectons
+                                et appliquons les méthodes de travail pour une
+                                pose, un raccordement et un montage dans les
+                                règles de l’art : sécuriser, protéger votre
+                                logement et vous former à l’utilisation de
+                                l’appareil. Votre poêle n’a plus de secret pour
+                                vous. À vous l’ambiance chaleureuse d’un foyer
+                                chauffé au bois.
+                            </p>
                         </div>
-                    </div>
-                    <div class="img">
-                    </div>
-                </div>
-                <!------------------------------------------ Parallax ----------------------------------------->
-                <div class="parallax">
-                </div>
-                <!------------------------------------------ Video ----------------------------------------->
-                <div class="video">
-                    <div class="videoYtb"> 
-                        <embed style="height: 100%; width:100%" src="https://www.youtube.com/embed/bnU12Z9dxX0">
-                    </div>
-                    <div class="container">
-                         <div class="title">
-                            <h2>La forêt Aäsgard</h2>
-                            <div class="txt">
-                                <p>
-                                  Aäsgard fait le choix en 2020 de prendre part à la Gestion 
-                                  Durable de la Forêt Française et d’investir dans le bois en 
-                                  tant que première source d’énergie renouvelable en France en 
-                                  faisant l’acquisition d’une forêt d’une trentaine d’hectares en Centre Bretagne. 
-                                  L’objectif ? Faire de cet endroit magique un laboratoire de connaissance 
-                                  et d’expérience pour nos collaborateurs et nos clients.
-                                </p>
-                            </div>
+                        <div class="btn__section">
+                            <button class="btn" type="button">
+                                Je prends RDV
+                            </button>
                         </div>
                     </div>
                 </div>
-                 <!------------------------------------------ Carousel ----------------------------------------->
-                 <div class="carousel">
-                     <h2 class="title">La sélection des experts Aäsgard</h2>
-                     <hr class="separator">
-                     <div class="container">
-                        <div class="img1"></div>
-                        <div class="img2"></div>
-                        <div class="img3"></div>
-                        <div class="img4"></div>
-                     </div>
-                    <div class="btn__section">
-                                <button class="btn" type="button">Découvrez tous nos poêles</button>
+                <div class="img"></div>
+            </div>
+            <!------------------------------------------ Parallax ----------------------------------------->
+            <div class="parallax"></div>
+            <!------------------------------------------ Video ----------------------------------------->
+            <div class="video">
+                <div class="videoYtb">
+                    <embed
+                        style="height: 100%; width: 100%"
+                        src="https://www.youtube.com/embed/bnU12Z9dxX0"
+                    />
+                </div>
+                <div class="container">
+                    <div class="title">
+                        <h2>La forêt Aäsgard</h2>
+                        <div class="txt">
+                            <p>
+                                Aäsgard fait le choix en 2020 de prendre part à
+                                la Gestion Durable de la Forêt Française et
+                                d’investir dans le bois en tant que première
+                                source d’énergie renouvelable en France en
+                                faisant l’acquisition d’une forêt d’une
+                                trentaine d’hectares en Centre Bretagne.
+                                L’objectif ? Faire de cet endroit magique un
+                                laboratoire de connaissance et d’expérience pour
+                                nos collaborateurs et nos clients.
+                            </p>
+                        </div>
                     </div>
-                 </div>
-                   <!------------------------------------------ Question ----------------------------------------->
-                   <div class="question">
-                       <h2 class="txt">
-                           Vous avez sûrement une bonne raison de craquer 
-                           pour un poêle à bois ou une cheminée scandinave
-                       </h2>
-                       <hr class="separator"/>
-                   </div>
+                </div>
+            </div>
+            <!------------------------------------------ Carousel ----------------------------------------->
+            <div class="carousel">
+                <h2 class="title">La sélection des experts Aäsgard</h2>
+                <hr class="separator" />
+                <div class="container">
+                    <div class="img1"></div>
+                    <div class="img2"></div>
+                    <div class="img3"></div>
+                    <div class="img4"></div>
+                </div>
+                <div class="btn__section">
+                    <button class="btn" type="button">
+                        Découvrez tous nos poêles
+                    </button>
+                </div>
+            </div>
+            <!------------------------------------------ Question ----------------------------------------->
+            <div class="question">
+                <h2 class="txt">
+                    Vous avez sûrement une bonne raison de craquer pour un poêle
+                    à bois ou une cheminée scandinave
+                </h2>
+                <hr class="separator" />
+            </div>
         </main>
-        <footer>
-            <div class="container">
-                <div class="wrapper">
-                    <h2>Aasgard</h2>
-                    <hr class="separator">
-                      <ul class="item__wrapper">
-                        <li><a href="#">Nos marques</a></li>
-                        <li><a href="#">Demandez un devis</a></li>
-                        <li><a href="#">Simulateur d’économie d’énergie</a></li>
-                        <li><a href="#">Contactez-nous</a></li>
-                        <li><a href="#">Rejoignez-nous</a></li>
-                    </ul>
-                </div>
-                <div class="wrapper">
-                    <h2>Notre selection de poêles</h2>
-                    <hr class="separator">
-                      <ul class="item__wrapper">
-                        <li><a href="#">Poêles à bois</a></li>
-                        <li><a href="#">Poêles à granulés</a></li>
-                        <li><a href="#">Cheminées Inserts</a></li>
-                        <li><a href="#">Poêle à bois Contura 596</a></li>
-                        <li><a href="#">Poêle à bois Stovax Studio 2 Freestanding</a></li>
-                        <li><a href="#">Poêle à granulés Rika Filo</a></li>
-                    </ul>
-                </div>
-                <div class="wrapper">
-                    <h2>Notre selection de conseils</h2>
-                    <hr class="separator">
-                    <ul class="item__wrapper">
-                        <li><a href="#">Chauffage principal ou chauffage d’appoint ?</a></li>
-                        <li><a href="#">5 critères pour bien choisir votre poêle à bois</li>
-                        <li><a href="#">5 critères pour bien choisir votre poêle à granulés</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="social">
-                <div class="logo">
-                </div>
-                <div class="icon">
-                    <small>Made by De Yves DION with ❤️</small>
-                </div>
-            </div>
-        </footer>
+        <!-- Injection du footer -->
+        <script>
+            $(document).ready(() => {
+                $("#footer").load("./footer/index.html");
+            });
+        </script>
+        <!-- footer -->
+        <div id="footer"></div>
 
         <script src="./src/js/script.js"></script>
     </body>

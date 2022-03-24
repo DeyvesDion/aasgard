@@ -4,14 +4,20 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../src/style/style.css" />
+
+        <!-- index style -->
+        <link rel="stylesheet" href="./style.css" />
+        <!-- Menu style -->
+        <link rel="stylesheet" href="../menu/menu.css" />
+        <!-- Footer Style -->
+        <link rel="stylesheet" href="../footer/footer.css" />
         <link
             rel="shortcut icon"
             href="../asset/favicon-aasgard.png"
             type="image/x-icon"
         />
 
-        <!-- Invection de la barre de navigation -->
+        <!-- InJection de la barre de navigation -->
         <script
             src="https://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -27,7 +33,49 @@
     <body>
         <!---------------------- Header --------------------->
         <div id="header"></div>
-        <h1>Page Produit</h1>
+        <main>
+            <!-- Hero -->
+            <div class="hero">
+                <div class="presentation">
+                    <h1 class="title">
+                        TOUS NOS POÊLES<span class="expose">.</span>
+                    </h1>
+                    <h2 class="subTitle">
+                        Poêle Aäsgard : trouvez votre poêle idéal
+                    </h2>
+                    <p class="description">
+                        Sur cette page, vous allez découvrir une sélection de
+                        jolis poêles aussi flamboyants<br />
+                        les uns que les autres. Pour vous y retrouver, on est là
+                        pour vous aider !
+                    </p>
+                </div>
+            </div>
+            <!-- Produit -->
+            <div class="produit">
+                <div class="presentation">
+                    <a href="/" class="title">Poêles à bois</a>
+                    <a href="/" class="title">Poêles à granulés</a>
+                    <a href="/" class="title">Poêles mixtes</a>
+                </div>
+            </div>
+            <div class="poele">
+                <div class="container">
+                    <div class="row">
+                        <div class="poele poele1"></div>
+                        <div class="poele poele2"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Injection du footer -->
+        <script>
+            $(document).ready(() => {
+                $("#footer").load("../footer/index.html");
+            });
+        </script>
+        <!-- footer -->
+        <div id="footer"></div>
         <script src="../src/js/script.js"></script>
     </body>
 </html>
