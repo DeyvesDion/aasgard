@@ -418,15 +418,6 @@ header.sticky ul li .rdv:hover {
         display: none;
     }
 
-    /* Footer */
-    footer {
-        height: auto;
-        padding: 20px;
-    }
-
-    footer .container {
-        flex-direction: column;
-    }
 
 }
 
